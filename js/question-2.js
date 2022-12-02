@@ -26,7 +26,10 @@ async function makeApiCall() {
     }
   } catch (error) {
     console.log(error);
-    resultsContainer.innerHTML = alert("error", error);
+    resultsContainer.innerHTML = alert(
+      "An error occurred when calling the API",
+      error
+    );
   }
 }
 
