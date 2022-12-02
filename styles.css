@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    margin-left: 1rem;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.games {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 200px;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    background-color: rgb(212, 201, 201);
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid darkred;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
